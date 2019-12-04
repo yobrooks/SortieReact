@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom'
-import events from './components/events'
+import App from './components/App'
+/*import events from './components/events'
 import { render } from 'react-dom';
 import { Calendar, momentLocalizer } from 'react-big-calendar';
 import moment from 'moment';
@@ -49,7 +50,7 @@ class App extends Component {
     );
   }
 }
-
+*/
 ReactDOM.render(<App />, document.getElementById('root'));
 
 
