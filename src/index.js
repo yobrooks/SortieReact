@@ -25,6 +25,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <button>Options</button>
         <div style={{ height: '500pt'}}>
           <Calendar
           //function to change the styles of the events
