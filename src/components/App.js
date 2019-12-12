@@ -16,7 +16,7 @@ class App extends Component{
         super(props);
     }
     clicked(){
-            alert("switch page");
+            alert("Go to new page/component");
         }
 
     render() {
