@@ -6,20 +6,24 @@
 import React, { Component } from 'react';
 import './App.css'; //change styling in App.css
 import Car from './test';
+import robinsLogo from './robinsLogo.PNG';
+const components = {
+    "Test": <Car />
+}
 
 class App extends Component{
     constructor(props){
-        super(props)
-
+        super(props);
     }
     clicked(){
-        
-    }
+            alert("switch page");
+        }
 
     render() {
         return(
-        <div>
-              <h1>Warner Robbins Air Force Base Sortie Scheduler</h1>
+        <div className = "mySection" >
+              <h1>Warner Robins Air Force Base Sortie Scheduler</h1>
+              <img src={robinsLogo} alt="Logo" />
               <button onClick={ this.clicked }>Generate New Calendar</button> <br></br>
               <button onClick={ this.clicked }>View Current Calendar</button>
          </div>
