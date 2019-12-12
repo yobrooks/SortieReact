@@ -4,7 +4,7 @@ import events from './components/events'
 import { render } from 'react-dom';
 import { Calendar, momentLocalizer } from 'react-big-calendar';
 import moment from 'moment';
-import './styles.css';
+import './index.css';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import withDragAndDrop from 'react-big-calendar/lib/addons/dragAndDrop'
 import 'react-big-calendar/lib/addons/dragAndDrop/styles.css'
@@ -54,7 +54,7 @@ class App extends Component {
       return existingEvent.id == event.id
         ? { ...existingEvent, start, end }
         : existingEvent
-    })
+    }) 
 
     this.setState({
       events: nextEvents,
