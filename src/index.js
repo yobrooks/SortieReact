@@ -62,11 +62,14 @@ class App extends Component {
 
   }
 
+  calClicked(){
+    alert("Show advanced options");
+}
+
   render() {
     return (
       <div>
-        <button>Options</button>
-        <div style={{ height: '500pt'}}>
+        <div style={{ height: '450pt'}}>
           <DragAndDropCalendar
             selectable
             onEventDrop = {this.moveEvent}
@@ -90,6 +93,7 @@ class App extends Component {
             localizer={localizer}
           />
         </div>
+       <div className = "myDiv"  onClick={ this.calClicked }> <button className = "myButton"> Advanced Options</button></div>
       </div>
     );
   }
